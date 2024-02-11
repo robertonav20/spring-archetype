@@ -1,0 +1,44 @@
+<archetype-descriptor name="spring-archetype-test">
+  <requiredProperties>
+    <requiredProperty key="package">
+      <defaultValue>com.example</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+  <fileSets>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="false" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.yaml</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+        <include>README.md</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>tools</directory>
+      <includes>
+        <include>postgres/deployment.yaml</include>
+        <include>docker-proxy-config.json</include>
+        <include>install-tilt.sh</include>
+        <include>docker-compose.yaml</include>
+        <include>Tiltfile</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
