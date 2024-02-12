@@ -13,7 +13,7 @@ chmod +x ./ctlptl
 mv ctlptl $HOME/.local/bin/ctlptl
 
 echo "Installing Kubectl"
-curl -LO https://storage.googleapis.com/kubernetes-release/release/1.29.1/bin/linux/amd64/kubectl
+curl -LO "https://dl.k8s.io/release/v.1.29.1/bin/linux/amd64/kubectl"
 chmod +x ./kubectl
 mv kubectl $HOME/.local/bin/kubectl
 
